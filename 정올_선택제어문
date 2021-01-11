@@ -1,0 +1,282 @@
+선택 제어문 자가진단 1번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    scanf("%d", &a);
+    if (a < 0)
+    {
+        printf("%d\n", a);
+        printf ( "minus");
+    else  
+    {
+        printf("%d" , a);
+    }
+     
+}
+
+선택 제어문 자가진단 2번 
+#include <stdio.h>
+int main(void)
+{
+    int a, b, c;
+    scanf("%d %d", &a, &b);
+    c = b + 100 - a;
+    printf("%d\n", c);
+    if (c > 0)
+    {
+        printf("Obesity");
+    }
+}
+
+선택 제어문 자가진단 3번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    scanf("%d", &a);
+    if (a >= 20)
+    {
+        printf("adult");
+    }
+    else
+    {
+        printf("%d years later", 20 - a);
+    }
+}
+
+선택 제어문 자가진단 4번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    scanf("%d", &a);
+    if (a >= 20)
+    {
+        printf("adult");
+    }
+    else
+    {
+        printf("%d years later", 20 - a);
+    }
+}
+
+선택 제어문 자가진단 5번
+#include <stdio.h>
+int main(void)
+{
+    double a;
+    scanf("%lf", &a);
+    if (a <= 50.80 && a >= 0)
+    {
+        printf("Flyweight");
+    }
+    else if (50.80 < a && a <= 61.23)
+    {
+        printf("Lightweight");
+    }
+    else if (61.23 < a && a <= 72.57)
+    {
+        printf("Middleweight");
+    }
+    else if (72.57 < a && a <= 88.45)
+    {
+        printf("Cruiserweight");
+    }
+    else
+    {
+        printf("Heavyweight");
+    }
+}
+
+선택 제어문 자가진단 6번
+#include <stdio.h>
+int main(void)
+{
+    double a, b;
+    scanf("%lf %lf", &a, &b);
+    if (a >= 4.0 && b >= 4.0)
+    {
+        printf("A");
+    }
+    else if (a >= 3.0 && b >= 3.0)
+    {
+        printf("B");
+    }
+    else
+    {
+        printf("C");
+    }
+}
+
+선택 제어문 자가진단 7번
+#include <stdio.h>
+int main(void)
+{
+    char a;
+    int b;
+    scanf("%c %d", &a, &b, sizeof(a));
+    if (a == 'M')
+        if (b >= 20)
+        {
+        printf("MAN");
+        }
+        else
+        {
+            printf("BOY");
+        }
+    else
+        if (b >= 20)
+        {
+            printf("WOMAN");
+        }
+        else
+        {
+            printf("GIRL");
+        }
+}
+
+선택제어문 자가진단 8번
+#include <stdio.h>
+int main(void)
+{
+    char a;
+    scanf("%c", &a);
+    if (a == 'A')
+    {
+        printf("Excellent");
+    }
+    else if (a == 'B')
+    {
+        printf("Good");
+    }
+    else if (a == 'C')
+    {
+        printf("Usually");
+    }
+    else if (a == 'D')
+    {
+        printf("Effort");
+    }
+    else if (a == 'F')
+    {
+        printf("Failure");
+    }
+    else
+    {
+        printf("error");
+    }
+}
+
+선택제어문 자가진단 9번 
+#include <stdio.h>
+int main(void)
+{
+    int a, b, c, min ;
+    scanf("%d %d %d", &a, &b, &c);
+    min = (a < b) ? a : b;
+    min = (min < c) ? min : c;
+    printf("%d" , min);
+}
+
+선택제어문 형성평가 1번 
+#include <stdio.h>
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    if (a < b)
+    {
+        printf("%d", b - a);
+    }
+    else
+    {
+        printf("%d", a - b);
+    }
+}
+
+선택 제어문 형성평가 2번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    scanf("%d", &a);
+    if (a == 0)
+    {
+        printf("zero");
+    }
+    else if (a > 0)
+    {
+        printf("plus");
+    }
+    else
+    {
+        printf("minus");
+    }
+}
+
+선택 제어문 형성평가 3번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    scanf("%d", &a);
+     
+    if (a % 400 == 0)
+    {
+        printf("leap year");
+    }
+    else if (a % 4 == 0 && a % 100 != 0)
+    {
+        printf("leap year");
+    }
+    else
+    {
+        printf("common year");
+    }
+}
+
+선택 제어문 형성평가 4번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    printf("Number? ");
+    scanf("%d", &a);
+    if (a == 1)
+    {
+        printf("dog");
+    }
+    else if (a == 2)
+    {
+        printf("cat");
+    }
+    else if (a == 3)
+    {
+        printf("chick");
+    }
+    else
+    {
+        printf("I don't know.");
+    }
+}
+
+선택 제어문 형성평가 5번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    scanf("%d", &a);
+    if (a == 2)
+    {
+        printf("%d", 28);
+    }
+    else if (a == 4 || a == 6 || a == 9 || a == 11)
+    {
+        printf("%d", 30);
+    }
+    else
+    {
+        printf("%d", 31);
+    }
+}

@@ -1,0 +1,111 @@
+출력 자가 진단 1번
+#include <stdio.h>
+int main(void)
+{  
+    printf("Fun Programming!");
+}
+
+출력 자가 진단 2번 
+#include <stdio.h>
+int main(void)
+{
+    printf("Programming! It's fun.");
+}
+
+출력 자가 진단 3번
+#include <stdio.h>
+int main(void)
+{
+    printf("My name is Hong Gil Dong. \n");
+    printf("I am 13 years old.");
+}
+
+출력 자가 진단 4번
+#include <stdio.h>
+int main(void)
+{
+    printf("(@) (@) \n(=^.^=) \n(-m-m-)");
+}
+
+출력 자가 진단 5번
+#include <stdio.h>
+int main(void)
+{
+    printf("I can program well. \nDreams come true.");
+}
+
+출력 자가 진단 6번
+#include <stdio.h>
+int main (void)
+{
+    printf("My height\n170\nMy weight\n68.600000");
+}
+
+출력 자가 진단 7번
+#include <stdio.h>
+int main (void)
+{
+    printf("5 Dan \n5 * 2 = 10");
+}
+
+출력 자가 진단 8번
+#include <stdio.h>
+int main (void)
+{
+    printf("      item     count     price \n");
+    printf("       pen        20       100 \n");
+    printf("      note         5        95 \n");
+    printf("    eraser       110        97 \n");
+}
+
+출력 형성 평가 1번 
+#include <stdio.h>
+int main (void)
+{
+    printf("My name is Hong");
+}
+
+출력 형성 평가 2번
+#include <stdio.h>
+int main (void)
+{
+    printf("My hometown \nFlowering mountain");
+}
+
+출력 형성 평가 3번
+#include <stdio.h>
+int main (void)
+{
+    printf("TTTTTTTTTT \n");
+    printf("TTTTTTTTTT \n");
+    printf("    TT     \n");
+    printf("    TT     \n");
+    printf("    TT     \n");
+}
+
+출력 형성 평가 4번
+#include <stdio.h>
+int main (void)
+{
+    int kor = 90, mat = 80, eng = 100;
+    printf("kor %d\n", kor);
+    printf("mat %d\n", mat);
+    printf("eng %d\n", eng);
+    printf("sum %d\n", kor + mat + eng);
+    printf("avg %d\n", (kor + mat + eng) / 3);
+}
+
+출력 형성 평가 5번
+#include <stdio.h>
+int main(void)
+{
+     
+    printf("%15s%15s%15s \n", "Seoul", "10,312,545", "+91,375");
+    printf("%15s%15s%15s \n", "Pusan", "3,567,910", "+5,868");
+    printf("%15s%15s%15s \n", "Incheon", "2,758,296", "+64,888");
+    printf("%15s%15s%15s \n", "Daegu", "2,511,676", "+17,230");
+    printf("%15s%15s%15s \n", "Gwangju", "1,454,636", "+29,774");
+     
+}
+
+

@@ -1,0 +1,131 @@
+입력 자가 진단 1번
+#include <stdio.h>
+int main (void)
+{
+    int a = -100;
+    printf("%d", a);
+}
+
+입력 자가 진단 2번
+#include <stdio.h>
+int main (void)
+{
+    int a = -1, b = 100;
+    printf("%d \n%d", a, b);
+}
+
+입력 자가 진단 3번
+#include <stdio.h>
+int main (void)
+{
+    int a = 55, b = 10;
+    int c = 2008, d = 1999;
+    printf("%d - %d = %d \n", a, b, a - b);
+    printf("%d - %d = %d \n", c, d, c - d);
+}
+
+입력 자가 진단 4번
+#include <stdio.h>
+int main (void)
+{
+    int weight = 49;
+    float biyul = 0.2683;
+    printf("%d * %.6lf = %f" , weight, biyul, weight * biyul);
+}
+
+입력 자가 진단 5번
+#include <stdio.h>
+int main (void)
+{
+    double a = 2.1, b = 10.5;
+    printf("%4.1fyd = %5.1fcm \n", a, a * 91.44);
+    printf("%4.1fin = %5.1fcm ", b, b * 2.54);
+}
+
+입력 자가 진단 6번
+#include <stdio.h>
+int main (void)
+{
+    int height;
+    printf("height = ");
+    scanf("%d" , &height);
+    printf("Your height is %dcm." , height);
+}
+
+입력 자가 진단 7번
+#include <stdio.h>
+int main (void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d * %d = %d \n" , a, b, a * b);
+    printf("%d / %d = %d" , a, b, a / b);
+}
+
+입력 자가 진단 8번
+#include <stdio.h>
+int main(void)
+{
+    float a, b;
+    char c;
+    scanf("%f\n", &a);
+    scanf("%f\n", &b);
+    scanf("%c", &c);
+    printf("%4.2f \n%4.2f \n%c", a , b , c);
+}
+
+입력 자가 진단 9번
+#include <stdio.h>
+int main(void)
+{
+    float a, b, c;
+    scanf("%f \n", &a);
+    scanf("%f \n", &b);
+    scanf("%f", &c);
+    printf("%5.3f \n%5.3f \n%6.3f", a , b , c);
+}
+
+입력 형성 평가 1번
+#include <stdio.h>
+int main (void)
+{ 
+    int a = 10, b = 20, c = 30;
+    printf("%d + %d = %d" , a, b, c);
+}
+
+입력 형성 평가 2번
+#include <stdio.h>
+int main (void)
+{
+    double a = 80.5 , b = 22.34;
+    printf("%10.2f%10.2f%10.2f" , a, b, a + b);
+}
+
+입력 형성 평가 3번
+#include <stdio.h>
+int main(void)
+{
+    int a = 50, c = 5006;
+    double b = 100.12;
+    printf("%.2f * %d = %d", b, a, c);
+}
+
+입력 형성 평가 4번
+#include <stdio.h>
+int main (void)
+{
+    int a , b , c;
+    scanf("%d %d %d \n" , &a, &b, &c);
+    printf("sum = %d \n" , a + b + c);
+    printf("avg = %d" , (a + b + c) / 3);
+}
+
+입력 형성 평가 5번
+#include <stdio.h>
+int main(void)
+{
+    double a;
+    printf("yard? ");
+    scanf("%lf", &a);
+    printf("%3.1lfyard = %4.1lfcm", a, a * 91.44);
+}

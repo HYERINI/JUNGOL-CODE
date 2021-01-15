@@ -1,0 +1,360 @@
+배열1 자가진단 1번 
+#include <stdio.h>
+int main(void)
+{
+    char num, english[10];
+    for (int i = 0; i < 10; i++)
+    {
+        scanf(" %c", &english[i]);
+         
+        printf("%c", english[i]);
+ 
+    }
+}
+
+배열1 자가진단 2번
+#include <stdio.h>
+int main(void)
+{
+    int num[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d ", num[i]);
+    }
+    return 0;
+}
+
+배열1 자가진단 3번
+#include <stdio.h>
+int main(void)
+{
+    char text[10];
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            scanf(" %c", &text[i]);
+        }
+        printf("%c ", text[0]);
+        printf("%c ", text[3]);
+        printf("%c ", text[6]);
+    }
+}
+
+배열1 자가진단 4번
+#include <stdio.h>
+int main(void)
+{
+    int num[100];
+    int i = 0;
+    while (1)
+    {
+        scanf("%d", &num[i]);
+        if (num[i] == 0)
+            break;
+        i++;
+    }
+ 
+    for (int j = i - 1; j >= 0; j--)
+    {
+        printf("%d ", num[j]);
+    }
+ 
+    return 0;
+}
+
+배열1 자가진단 5번
+#include <stdio.h>
+int main(void)
+ 
+{
+    int i, j;
+    float score[6]  = { 85.6, 79.5, 83.1, 80.0, 78.2, 75.0 };
+        scanf("%d %d", &i, &j);
+    printf("%.1f", score[i-1] + score[j-1]);
+}
+
+배열1 자가진단 6번
+#include <stdio.h>
+int main(void)
+{
+    int num[10];
+    int min = 1000;
+    for (int i = 0; i < 10; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+    for (int j = 0; j < 10; j++)
+    {
+        if (min > num[j])
+        {
+            min = num[j];
+        }
+    }
+    printf("%d", min);
+}
+
+배열1 자가진단 7번
+#include <stdio.h>
+int main(void)
+{
+    int num[10];
+    int max = 1, min = 10000, a = 100;
+     
+    for (int i = 0; i < 10; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+     
+    for (int j = 0; j < 10; j++)
+    {
+        if (num[j] < 100 && num[j] > max)
+        {
+            max = num[j];
+        }
+ 
+        else if (num[j] >= 100 && num[j] < min)
+        {
+            min = num[j];
+        }
+    }
+    if (max == 1)
+    {
+        max = a;
+    }
+    if (min == 10000)
+    {
+        min = a;
+    }
+    printf("%d %d", max, min);
+}
+
+배열1 자가진단 8번
+#include <stdio.h>
+int main(void)
+{
+    int num[10];
+    int sum = 0;
+    double avg = 0;
+ 
+    for (int i = 0; i < 10; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+ 
+    for (int j = 1;j < 10; j += 2)
+    {
+        sum += num[j];
+    }
+ 
+    for (int k = 0; k < 10; k += 2)
+    {
+        avg += num[k];
+    }
+ 
+    printf("sum : %d\navg : %.1f", sum, avg / 5);
+ 
+}
+
+배열1 자가진단 9번
+#include <stdio.h>
+int main(void)
+{
+    int num[10], array;
+    for (int i = 0; i < 10; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+ 
+    for (int j = 0; j < 10; j++)
+    {
+        for (int k = 0; k < 9; k++)
+        {
+            if (num[k] < num[k + 1])
+            {
+                array = num[k];
+                num[k] = num[k + 1];
+                num[k + 1] = array;
+            }
+        }
+    }
+    for (int a = 0; a < 10; a++)
+    {
+        printf("%d ", num[a]);
+    }
+}
+
+배열1 형성평가 1번
+#include <stdio.h>
+int main(void)
+{
+    char letter[10];
+    for (int i = 0; i < 10; i++)
+    {
+        scanf(" %c", &letter[i]);
+    }
+     
+    for (int j = 9; j >= 0; j--)
+    {
+        printf("%c ", letter[j]);
+    }
+}
+
+배열1 형성평가 2번
+#include <stdio.h>
+int main(void)
+{
+    int num[5];
+    int sum = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+ 
+    for (int j = 0; j < 5; j += 2)
+    {
+        sum += num[j];
+    }
+ 
+    printf("%d", sum);
+}
+
+배열1 형성평가 3번
+#include <stdio.h>
+int main(void)
+{
+    int num[10];
+    int odd = 0, even = 0;
+    for (int i = 0; i < 10; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+ 
+    for (int j = 0; j < 10; j+=2)
+    {
+        odd += num[j];
+    }
+ 
+    for (int k = 1; k < 10; k+=2)
+    {
+        even += num[k];
+    }
+ 
+    printf("odd : %d\neven : %d", odd, even);
+}
+
+배열1 형성평가 4번
+#include <stdio.h>
+int main(void)
+{
+    int num[100], i = 0;
+    while (1)
+    {
+        scanf("%d", &num[i]);
+        if (num[i] == -1)
+            break;
+        i++;
+    }
+ 
+    if (i < 3)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            printf("%d ", num[j]);
+        }
+    }
+    else
+    {
+        printf("%d %d %d", num[i - 3], num[i - 2], num[i - 1]);
+    }
+     
+}
+
+배열1 형성평가 5번
+#include <stdio.h>
+int main(void)
+{
+    float weight[6], sum = 0;
+    for (int i = 0; i < 6; i++)
+    {
+        scanf("%f", &weight[i]);
+        sum += weight[i];
+    }
+    printf("%.1f", sum / 6);
+     
+}
+
+배열1 형성평가 6번
+#include<stdio.h>
+int main(void)
+{
+    int k = 0;
+    char answer;
+    char letter[6] = { 'J', 'U', 'N', 'G', 'O', 'L' };
+    scanf(" %c", &answer, sizeof(answer));
+    for (int i = 0; i < 6; i++)
+    {
+        if (answer != letter[i] && i != 5)
+        {
+            continue;
+        }
+        else if (answer != letter[i] && i == 5)
+        {
+            printf("none");
+            break;
+        }
+        else
+        {
+            printf("%d", i);
+            break;
+        }
+    }
+}
+
+배열1 형성평가 7번
+#include <stdio.h>
+int main(void)
+{
+    int i = 0, arr[100];
+    while (1) {
+        scanf("%d", &arr[i]);
+        if (arr[i] == 999)
+            break;
+        i++;
+    }
+ 
+    int min = arr[0], max = arr[0];
+    for (int j = 1; j < i ;j++)
+    {
+        if (min > arr[j]) {
+            min = arr[j];
+        }
+        if (max < arr[j]) {
+            max = arr[j];
+        }
+    }
+    printf("max : %d\nmin : %d", max, min);
+}
+
+배열1 형성평가 8번
+#include <stdio.h>
+int main(void)
+{
+    int i = 0, arr[100];
+    int sum = 0, num = 0;
+    while (1) {
+        scanf("%d", &arr[i]);
+        if (arr[i] == 0)
+            break;
+        i++;
+    }
+    for (int j = 0; j < i; j++) {
+        if (arr[j] % 5 == 0)
+        {
+            sum += arr[j];
+            num += 1;
+        }
+    }
+ 
+    printf("Multiples of 5 : %d\nsum : %d\navg : %.1f", num, sum, (double)sum / num );
+ 
+}

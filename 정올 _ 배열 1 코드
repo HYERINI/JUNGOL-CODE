@@ -358,3 +358,55 @@ int main(void)
     printf("Multiples of 5 : %d\nsum : %d\navg : %.1f", num, sum, (double)sum / num );
  
 }
+
+배열1 형성평가 9번
+#include <stdio.h>
+int main(void)
+{
+    int i = 0, arr[100];
+    int sum = 0;
+    while (1) {
+        scanf("%d", &arr[i]);
+        if (arr[i] == 0)
+            break;
+        i++;
+    }
+    printf("%d\n", i);
+ 
+    for (int j = 0; j < i; j++)
+    {
+ 
+        if (arr[j] % 2 == 0)
+            printf("%d ", (arr[j]) / 2);
+        else
+            printf("%d ", (arr[j]) * 2);
+    }
+}
+
+배열1 형성평가 A번
+#include <stdio.h>
+int main(void) {
+    int a;
+    int temp;
+    int arr[20];
+    scanf("%d", &a);
+    for (int num = 0; num < a ; num++) {
+        scanf("%d", &arr[num]);
+    }
+    for (int i = 0; i < a - 1; i++) {
+        for (int k = 0; k < a - i - 1; k++) {
+            if (arr[k + 1] > arr[k]) {
+                temp = arr[k];
+                arr[k] = arr[k+1];
+                arr[k+1] = temp;
+ 
+            }
+        }
+    }
+ 
+    for (int j = 0; j < a; j++) {
+        printf("%d\n", arr[j]);
+         
+    }
+ 
+}

@@ -1,0 +1,130 @@
+연산자 자가진단 1번
+#include <stdio.h>
+int main(void)
+{
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    printf("sum : %d \n", a + b + c);
+    printf("avg : %d \n", (a + b + c) / 3);
+}
+
+연산자 자가진단 2번 
+#include <stdio.h>
+int main (void)
+{
+    int a ,b ;
+    scanf("%d %d", &a, &b);
+    printf("%d %d", a + 100, b % 10);
+}
+
+연산자 자가진단 3번
+#include <stdio.h>
+int main (void)
+{
+    int a;
+    scanf("%d", &a);
+    printf("%d \n", a++);
+    printf("%d", ++a);
+}
+
+연산자 자가진단 4번
+#include <stdio.h>
+int main(void)
+{
+    int a, b, c;
+    scanf("%d %d", &a, &b);
+    c = a * (--b);
+    printf("%d %d %d", ++a, b, c);  
+}
+
+연산자 자가진단 5번
+#include <stdio.h>
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    a == b ? printf("1\n") : printf("0\n") ;
+    a != b ? printf("1") : printf("0") ;
+ 
+}
+
+연산자 자가진단 6번
+#include <stdio.h>
+ 
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d > %d --- %d\n", a, b, a > b);
+    printf("%d < %d --- %d\n", a, b, a < b);
+    printf("%d >= %d --- %d\n", a, b, a >= b); 
+    printf("%d <= %d --- %d\n", a, b, a <= b);
+}
+
+연산자 자가진단 7번
+#include <stdio.h>
+ 
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d %d", a && b, a || b);
+}
+
+연산자 자가진단 8번
+#include <stdio.h>
+int main(void)
+{
+    int a, b, c; 
+    scanf("%d %d %d", &a, &b, &c);
+    printf("%d %d", (a > b) && (a > c), a ==b && b==c);
+}
+
+연산자 형성평가 1번
+#include <stdio.h>
+int main(void)
+{
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    printf("sum %d\navg %d", (a + b + c + d), (a + b + c + d) / 4);
+}
+
+연산자 형성형가 2번
+#include <stdio.h>
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d / %d = %d...%d", a, b, a / b, a % b);
+}
+
+연산자 형성평가 3번
+#include <stdio.h>
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    int c = a + 5, d = b * 2;
+    printf("width = %d\nlength = %d\narea = %d", c, d, c * d);
+}
+
+연산자 형성평가 4번
+#include <stdio.h>
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d %d\n", ++a, b--);
+    printf("%d %d", a, b);
+ 
+}
+
+연산자 형성평가 5번
+#include <stdio.h>
+int main(void)
+{
+    int a, b, c, d;
+    scanf("%d %d\n", &a, &b);
+    scanf("%d %d", &c, &d);
+    a > c&& b > d ? printf("1") : printf("0");
+}

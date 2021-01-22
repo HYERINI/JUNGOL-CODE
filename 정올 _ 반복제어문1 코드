@@ -1,0 +1,177 @@
+반복제어문1 자가진단 1번
+#include <stdio.h>
+int main(void)
+{
+    int i = 1;
+    while (i < 16)
+    {
+        printf("%d ", i);
+        i += 1;
+    }
+}
+
+반복제어문1 자가진단 2번
+#include <stdio.h>
+ 
+int main(void)
+{
+    int a;
+    int i = 1;
+    int n = 0;
+    scanf("%d", &a);
+    while (i <= a)
+    {
+        n += i;
+        i++;
+    }
+    printf("%d", n);
+}
+
+반복제어문1 자가진단 3번
+#include <stdio.h>
+ 
+int main(void)
+{
+    int a;
+    while (1)
+    {
+        printf("number? ");
+        scanf("%d", &a);
+        if (a > 0)
+            printf("positive integer\n");
+        else if (a < 0)
+            printf("negative number\n");
+        else
+            break;
+    }
+ 
+}
+
+반복제어문1 자가진단 4번
+#include <stdio.h>
+ 
+int main(void)
+{
+    int i=0;
+    int sum = 0;
+    int num = 0;
+    while (1)
+    {
+        scanf("%d", &i);
+        if (i < 100) {
+            sum += i;
+            num++;
+            continue;
+        }
+        else {
+            sum += i;
+            num++;
+            break;
+        }
+    }
+    printf("%d\n%.1lf", sum, (double)sum / num );
+}
+
+반복제어문1 자가진단 5번
+#include <stdio.h>
+ 
+int main(void)
+{
+    int a;
+    do {
+        scanf("%d", &a);
+        if (a % 3 == 0) {
+            printf("%d\n", a / 3);
+            continue;
+        }
+ 
+        else {
+             
+            continue;
+        }
+    } while (a != -1);
+}
+
+반복제어문1 자가진단 6번
+#include <stdio.h>
+int main(void)
+{
+    int i;
+    while (1)
+    {
+        printf("1. Korea \n2. USA \n3. Japan \n4. China\nnumber? ");
+        scanf("%d", &i);
+        if (i == 1) {
+            printf("\nSeoul\n\n");
+            continue;
+        }
+        else if (i == 2) {
+            printf("\nWashington\n\n");
+            continue;
+        }
+        else if (i == 3) {
+            printf("\nTokyo\n\n");
+            continue;
+        }
+        else if (i == 4) {
+            printf("\nBeijing\n\n");
+            continue;
+        }
+        else {
+            printf("\nnone\n");
+            break;
+        }
+    }
+}
+
+반복제어문1 형성평가 1번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    int i = 1;
+    scanf("%d", &a);
+    while (i < a + 1)
+    {
+        printf("%d ", i);
+        i++;
+    }
+}
+
+반복제어문1 형성평가 2번
+#include <stdio.h>
+int main(void)
+{
+    int a;
+    int odd = 0, even = 0;
+    do {
+        scanf("%d", &a);
+        if (a % 2 == 0) {
+            even += 1;
+            continue;
+        }
+        else {
+            odd += 1;
+            continue;
+        }
+    } while (a > 0);
+ 
+    printf("odd : %d\neven : %d", odd, even - 1);
+}
+
+반복제어문1 형성평가 4번
+#include <stdio.h>
+int main(void)
+{
+    int a, sum = 0;
+    do {
+        scanf("%d", &a);
+        if (a % 3 == 0 || a % 5 == 0) {
+            continue;
+        }
+        else {
+            sum += 1;
+        }
+    } while (a > 0);
+    printf("%d", sum);
+}

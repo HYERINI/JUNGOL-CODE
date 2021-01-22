@@ -159,6 +159,21 @@ int main(void)
     printf("odd : %d\neven : %d", odd, even - 1);
 }
 
+반복제어문1 형성평가 3번
+#include <stdio.h>
+int main(void) {
+    int a;
+    int sum = 0, i = 0;
+    while (1) {
+        scanf("%d", &a);
+        if (a > 100 || a < 0)
+            break;
+        sum += a;
+        i += 1;
+    }
+    printf("sum : %d\navg : %.1f", sum, (double)(sum) / i);
+}
+
 반복제어문1 형성평가 4번
 #include <stdio.h>
 int main(void)
@@ -174,4 +189,26 @@ int main(void)
         }
     } while (a > 0);
     printf("%d", sum);
+}
+
+반복제어문1 형성평가 5번
+#include <stdio.h>
+int main(void) {
+	int b, h;
+	double t;
+	char answer;
+	while(1) {
+		printf("Base = ");
+		scanf("%d", &b);
+		printf("Height = ");
+		scanf("%d", &h);
+		printf("Triangle width = %.1f", (double)b * (double)h / 2);
+		printf("\nContinue? ");
+		scan(" %c", &answer);
+
+		if (answer == 'Y' || answer == 'y')
+			continue;
+		else
+			break;
+	}
 }

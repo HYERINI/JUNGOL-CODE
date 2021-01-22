@@ -1,0 +1,385 @@
+반복제어문3 자가진단 1번
+#include <stdio.h>
+int main(void)
+{
+    int n, i = 1;
+    scanf("%d", &n);
+    int sum = 0, num = 0;
+    
+    do{
+        if (i % 2 != 0)
+        {
+            sum += i;
+            num++;
+            i++;
+        }
+        else
+        {
+            i++;
+            continue;
+        }
+    } while (sum < n);
+    
+    printf("%d %d", num, sum);
+}
+
+반복제어문3 자가진단 2번
+#include <stdio.h>
+int main(void)
+{
+    int n, line, star;
+    scanf("%d", &n);
+    for (line = 0;line < n;line++)
+    {
+        for (star = 0 ; star <= line ; star++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 자가진단 3번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+ 
+    for (int line1 = 0; line1 < n; line1++)
+    {
+        for (int star1 = 0; star1 <  n - line1; star1++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+ 
+    for (int line2 = 0; line2 < n; line2++)
+    {
+        for (int star2 = 0; star2 <= line2 ; star2++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 자가진단 4번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    for (int line = 0; line < n; line++)
+    {
+        for (int space = 0; space < line; space++)
+        {
+            printf(" ");
+        }
+        for (int star = 0; star + line < n; star++)
+        {
+            printf("*");
+        }
+        printf("\n");
+   }
+}
+
+반복제어문3 자가진단 5번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    for (int line = 0; line < n; line++)
+    {
+        for (int space = 0; space < line; space++)
+        {
+            printf(" ");
+        }
+        for (int star = 0; star < 2 * n - 2 * line - 1 ; star++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 자가진단 6번
+#include<stdio.h>
+int main(void)
+{
+    int n;
+    char word = 65;
+    scanf("%d", &n);
+    for (; n>0; n--)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%c", word);
+            word += 1;
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 자가진단 7번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    int num = 1;
+    char word = 65;
+    scanf("%d", &n);
+    int line = n;
+    for (;  line > 0; line--)
+    {
+        for (int i = 0; i < line; i++ )
+        {
+            printf("%d ", num);
+            num += 1;
+        }
+        for (int j = 0; (n - line) >= j ; j++ )
+        {
+            printf("%c ", word);
+            word += 1;
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 형성평가 1번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    int num = 1;
+    char word = 65;
+    scanf("%d", &n);
+    int line = n;
+    for (;  line > 0; line--)
+    {
+        for (int i = 0; i < line; i++ )
+        {
+            printf("%d ", num);
+            num += 1;
+        }
+        for (int j = 0; (n - line) >= j ; j++ )
+        {
+            printf("%c ", word);
+            word += 1;
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 형성평가 2번
+#include <stdio.h>
+int main(void)
+{
+    int n; 
+    scanf("%d", &n);
+    for (int i = 1; i * n < 100; i++)
+    {
+        if ((i * n) % 10 == 0)
+        {
+            printf("%d ", i * n);
+            break;
+        }
+        else
+        {
+            printf("%d ", i * n);
+            continue;
+        }
+    }
+}
+
+반복제어문3 형성평가 3번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    for (int line = 0; line < n ; line++)
+    {
+        for (int star = 0; star <= line; star++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (int line = n; line > 0; line--)
+    {
+        for (int star = 1; star < line ; star++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 형성평가 4번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    for (int line1 = 0; line1 < n; line1++)
+    {
+        for (int space1 = 0; space1 < line1; space1++)
+        {
+            printf(" ");
+        }
+        for (int star1 = 0; star1 < 2 * n - 2 * line1 - 1; star1++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (int line2 = 1; line2 < n; line2++)
+    {
+        for (int space2 = 0; space2 < n - line2 - 1; space2++)
+        {
+            printf(" ");
+        }
+        for (int star2 = 0; star2 < 3 + 2 * (line2 - 1); star2++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 형성평가 5번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    for (int line = 0; line < n; line++)
+    {
+        for (int space = 0; space < 2 * (n - line - 1); space++)
+        {
+            printf(" ");
+        }
+        for (int star = 0; star < 2 * line + 1; star++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 형성평가 6번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    for (int line = 0; line < n; line++)
+    {
+        for (int space = 0; space < n - line - 1; space++)
+        {
+            printf("  ");
+        }
+        for (int num = 1; num < line + 2; num++)
+        {
+            printf("%d ", num);
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 형성평가 7번
+#include <stdio.h>
+int main(void)
+{
+    int n, num = 0;
+    char eng = 65;
+    scanf("%d", &n);
+    for (int line = 0; line < n; line++)
+    {
+        for (int i = 0; i < n - line; i++)
+        {
+            printf("%c ", eng);
+            eng += 1;
+        }
+        for (int j = 0; j < line; j++)
+        {
+            printf("%d ", num);
+            num += 1;
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 형성평가 8번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    int num = 1;
+    scanf("%d", &n);
+    for (int line = 0; line < n; line++)
+    {
+        for (int space = 0; space < line; space++)
+        {
+            printf("  ");
+        }
+        for (int i = 0; i < n - line; i++)
+        {
+            printf("%d ", num);
+            num += 1;
+        }
+        printf("\n");
+         
+    }
+}
+
+반복제어문3 형성평가 9번
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    for (int line1 = 0; line1 < n ; line1++)
+    {
+        for (int shape1 = 0; shape1 < line1 + 1; shape1++)
+        {
+            printf("# ");
+        }
+        printf("\n");
+    }
+    for (int line2 = 0; line2 < n - 1; line2++)
+    {
+        for (int space = 0; space < line2 + 1; space++)
+        {
+            printf("  ");
+        }
+        for (int shape2 = 0; shape2 < n - line2 - 1; shape2++)
+        {
+            printf("# ");
+        }
+        printf("\n");
+    }
+}
+
+반복제어문3 형성평가 10번
+#include <stdio.h>
+ 
+int main()
+{
+    int a, i, j;
+    int num = 1;
+    scanf("%d", &a);
+    for (i = 0;i < a;i++) 
+    {
+        for (j = 0;j < a;j++)
+        {
+            printf("%d ", num);
+            num = (num + 2) % 10;
+        }
+        printf("\n");
+    }
+}
+

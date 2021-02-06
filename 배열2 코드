@@ -1,0 +1,23 @@
+배열2 자가진단 1번
+#include <stdio.h>
+
+int main(void) {
+
+ char ch;
+ int arr[26] = { 0 };
+
+ while (1) {
+  scanf(" %c", &ch);
+  if (ch >= 'A' && ch <= 'Z')
+   arr[ch - 65]++;
+  else
+   break;
+ }
+
+ for (int i = 0; i < 26; i++) {
+  if (arr[i] != 0)
+   printf("%c : %d \n", i + 65, arr[i]);
+ }
+
+ return 0;
+}

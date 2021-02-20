@@ -46,3 +46,29 @@ int main(void)
 
 	return 0;
 }
+
+배열2 자가진단 3번
+#include "stdio.h"
+
+int main(void)
+{
+	int arr[103]={0,};
+	int ans = 0, k=0;
+
+	scanf_s("%d", &ans);
+
+	arr[0] = 100;
+	arr[1] = ans;
+	
+	for (int i = 2; i < 100; i++) {
+		arr[i]=arr[i-2]-arr[i-1];
+	}
+
+	for (int k = 0; k < 100; k++) {
+		printf("%d ", arr[k]);
+		if(arr[k]<0)	
+		    break;
+	}
+	return 0;
+}
+
